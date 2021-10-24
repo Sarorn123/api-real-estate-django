@@ -1,4 +1,4 @@
 release: python manage.py makemigrations
 release: python manage.py migrate
 
-web: gunicorn API-REAL-ESTATE.wsgi --log-file -
+web: gunicorn API-REAL-ESTATE.wsgi
