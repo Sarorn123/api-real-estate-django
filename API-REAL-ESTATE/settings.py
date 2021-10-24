@@ -97,8 +97,12 @@ WSGI_APPLICATION = 'API-REAL-ESTATE.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'ddnm91m1s7ksll',
+        'USER': 'djsblusiiuhwso',
+        'PASSWORD': '680212b33376892acd7e14176fc1bb4fa5b2f0bc4bc14121d0f453bcc0d2c6d1',
+        'HOST': 'ec2-3-231-103-217.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
@@ -142,8 +146,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR/'staticfiles'
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
