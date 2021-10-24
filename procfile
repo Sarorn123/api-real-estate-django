@@ -1,4 +1,6 @@
-release: python manage.py makemigrations
-release: python manage.py migrate
 
 web: gunicorn API-REAL-ESTATE.wsgi
+
+release: python manage.py makemigrations --noinput
+release: python manage.py migrate --noinput
+
