@@ -95,12 +95,9 @@ WSGI_APPLICATION = 'API-REAL-ESTATE.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'api-real-estate',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',  # This is where you put the name of the db file.
+        # If one doesn't exist, it will be created at migration time.
     }
 }
 
