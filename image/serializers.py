@@ -5,8 +5,8 @@ from image.models import Image, Document, Material, Feature, ImageItem
 class ImageSerializer(serializers.ModelSerializer):
     class Meta:
         model = Image
-        fields = ["id", "name", "image_url", "price",
-                  "total_love", "location", "type"]
+        fields = ["id", "name", "image_url", "price", "total_bathsroom", "garage",
+                  "status", "total_love", "location", "type", "aria", "total_love", "total_bed"]
 
 
 class DocumentSerializer(serializers.ModelSerializer):

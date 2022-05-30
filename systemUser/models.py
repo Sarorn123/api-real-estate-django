@@ -16,6 +16,7 @@ class AccessModule(models.Model):
     name = models.CharField(max_length=255)
     parent = models.IntegerField(default=0)
     url = models.CharField(max_length=255)
+    user_type = models.CharField(max_length=255, default="USER")
     sortkey = models.IntegerField()
     created_at = models.DateField(auto_now_add=True)
 
